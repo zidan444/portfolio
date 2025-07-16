@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a
+        href="#"
+        class="logo"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="1000"
+        >Portfolio.</a
+      >
+      <ul class="menu">
+        <li class="zivia" data-aos="fade-down" data-aos-duration="1500">
+          <a href="#" >Home</a>
+        </li>
+        <li data-aos="fade-down" data-aos-duration="2000">
+          <a href="#" >About</a>
+        </li>
+        <li data-aos="fade-down" data-aos-duration="2400">
+          <a href="#" >Service</a>
+        </li>
+        <li  data-aos="fade-down" data-aos-duration="2700">
+          <a href="#" 
+            >portfolio</a
+          >
+        </li>
+        <li data-aos="fade-down" data-aos-duration="3000">
+          <a href="#" >Contact</a>
+        </li>
+      </ul>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i class="fa-solid fa-bars" id="hamburg"></i>
+        <i class="fa-solid fa-times" id="close"></i>
+      </label>
+    </nav>
+    <section class="home">
+      <div class="homeinfo">
+        <h1>Zidan Ahammed</h1>
+        <h2>
+          Iam a
+          <span style="--i: 4" data-text="Web developer">Web developer</span>
+          <span style="--i: 3" data-text="Athlete">Athlete</span>
+          <span style="--i: 2" data-text="Designer">Designer</span>
+          <span style="--i: 1" data-text="Singer">Singer</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis
+          ipsa tempora non architecto delectus magni ipsum vitae alias nobis ab
+          deleniti quia quo, recusandae optio, placeat, blanditiis fuga
+          voluptas!
+        </p>
+        <div class="btn-stc">
+          <a href="#" class="butn">download cv</a>
+          <div class="fbk">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-items">
+            <img src="home.png.png" alt=""  data-aos="flip-left"data-aos-duration=1000 data-aos-delay="1000">
+             
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skill-sec">
+      <h2>Skills</h2>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem
+        hic sit quia placeat nihil laudantium corrupti dolore, odio ducimus modi
+        delectus non cumque neque quam libero tenetur sunt dignissimos quasi,
+        accusantium nisi ex. Quisquam repellat dolore repellendus quam, unde
+        placeat est eum molestiae quasi! Aspernatur ratione quibusdam facere
+        ullam repellendus id rerum sed molestias.
+      </div>
+      <div class="cells">
+        <div class="cell">
+          <a href="#"
+            ><i class="fa-brands fa-html5" style="color: #000000"></i>
+          </a>
+          <span>HTML</span>
+        </div>
+        <div class="cell">
+          <a href="#">
+            <i class="fa-brands fa-css3-alt" style="color: #000000"></i
+          ></a>
+          <span>CSS</span>
+        </div>
+        <div class="cell">
+          <a href="#">
+            <i class="fa-brands fa-js" style="color: #00030b"></i
+          ></a>
+          <span>JAVA SCRIPT</span>
+        </div>
+        <div class="cell">
+          <a href="#">
+            <i class="fa-brands fa-node-js" style="color: #000000"></i
+          ></a>
+          <span>NODE.JS</span>
+        </div>
+        <div class="cell">
+          <a href="#">
+            <i class="fa-brands fa-react" style="color: #000000"></i
+          ></a>
+          <span>REACT.JS</span>
+        </div>
+      </div>
+    </section>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

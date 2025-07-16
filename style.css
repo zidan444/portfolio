@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");  
+  
+  * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'share tech',sans-serif;
+} 
+body{
+  background-color: rgb(0, 0, 0);
+}
+a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.navbar{
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  padding: 10px 5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1001;
+  color: black;
+
+}
+.logo{
+  font-size: 50px;
+  font-weight: 1000;
+  letter-spacing: 5px;
+  font-family: 'michroma',sans-serif ;
+}
+.navbar ul{
+  display: flex;
+
+}
+.navbar ul li{
+  list-style: none;
+  margin: 30px;
+}
+.navbar ul li a{
+  font-size: 30px;
+  font-weight: 700;
+
+  transition: all.7s ease;
+  
+}
+/* Default hidden icons and checkbox */
+#check {
+  display: none;
+}
+#hamburg,
+#close {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu default layout (desktop) */
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile menu styles */
+@media (max-width: 860px) {
+  label #hamburg {
+    display: block;
+  }
+
+  label #close {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(25px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+    transition: all 0.5s ease;
+  }
+
+  .menu li a {
+    font-size: 2.5rem;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  #check:checked ~ label #hamburg {
+    display: none;
+  }
+
+  #check:checked ~ label #close {
+    display: block;
+  }
+}
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1045px){
+  .navbar{
+    padding: 5px;
+  }
+ .navbar ul li a{
+  font-size:25px ;
+  padding:  0 5px;
+  
+ }
+ .navbar ul li{
+  position: relative;
+  top: 1px;
+}}
+
+
+
+
+.navbar ul li:hover a
+{
+  color: rgb(251, 20, 251);
+transform: scale(1.1);
+}
+ .navbar ul li.zivia a{
+  color:rgb(251, 20, 251);
+}
+.navbar ul li:hover.zivia a{
+  color: aliceblue;
+}
+.home{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 8% 0;
+  color: aliceblue;
+  gap: 60px;
+
+}
+.homeinfo h1{
+  font-size: 50px;
+}
+.homeinfo h2{
+  font-size: 30px;
+  margin-top: -2px;
+
+  display: inline-block;
+  
+}
+.homeinfo h2 span{
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke:.1px rgb(251, 20, 251);
+  animation: display-text 16s linear infinite;  
+  animation-delay: calc(-4s*var(--i));
+}
+@keyframes display-text{
+  25%,100%{
+    display: none;
+  }
+}
+.homeinfo h2 span::before{
+  content: attr(data-text);
+  position: absolute;
+  border-right: 2px solid rgb(251, 20, 251);
+  color: rgb(251, 20, 251);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;
+  animation: fill-text 4s linear infinite;
+
+}
+@keyframes fill-text{
+  10%,100%{
+    width: 0%;
+ }
+ 70%,90%{
+  width: 100%;
+ }
+}
+.homeinfo p{ 
+  font-size: 15px;
+  margin: 12px 0 30px;
+}
+.btn-stc{
+  display: flex;
+  align-items: center;
+
+}
+.butn{
+  display: inline-block;
+  padding: 10px 30px;
+  background-color:rgb(251, 20, 251);
+  border:  2px solid rgb(251, 20, 251);
+  border-radius: 45px;
+  box-shadow: 0 0 10px rgb(251, 20, 251);
+  font-size: 18px;
+  color: black;
+  font-weight: 600; 
+  transition: .5s;
+}
+.butn:hover{
+  background: transparent;
+  color: rgb(251, 20, 251);
+  box-shadow: none;
+}
+.fbk{
+  margin-left: 20px;
+}
+.fbk a{
+  display: inline-flex;
+  padding: 10px;
+  border: 2px solid rgb(251, 20, 251);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(251, 20, 251);
+   margin: 0 8px;
+   transition: .5s;
+}
+.fbk :hover{
+  background-color: rgb(251, 20, 251);
+  box-shadow: 0 0 5px rgb(251, 20, 251);
+  color: black;
+}
+  .img-box{
+position: relative;
+    width: 30vw;
+    height: 30vw;
+
+    border-radius: 50%;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+  }
+  .img-box::before,
+  .img-box::after{
+    content:'';
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,rgb(251,20,251));
+    position: absolute;
+    transform: rotate(0deg);
+    animation: rotate-border 6s linear infinite;
+
+  }
+  @keyframes rotate-border {
+    100%{
+       transform: rotate(360deg);
+    }
+  }
+  .img-box::after{
+    animation-delay: -3s;
+  }
+  .img-items{
+    background-color: rgb(0, 0, 0) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgb(0, 0, 0) ;
+    
+  }
+  .img-items img{
+    object-fit: cover;
+    width: 65%;
+  position: absolute;
+    top: 30px;
+    display: block;
+  mix-blend-mode:lighten;
+  }
+@media(max-width:860px){
+  .home{
+    flex-direction:column-reverse
+  }
+  .img-box{
+    width: 40vw;
+  height: 40vw; 
+ }
+}
+#skills{
+  color: rgb(254, 253, 252);
+}
+.skill-sec{
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+ .skill-sec h2{
+  text-align: center;
+  font-size: 60px;
+  color:rgb(251, 20, 251);
+  font-weight: bolder;
+}
+.skill-sec .text{
+  text-align: center;
+  margin-top: 10px;
+}
+.cells{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+} 
+.cell{
+display: inline-flex;
+padding: 10px;
+font-size: 55px;
+border: 2px solid rgb(251, 20, 251);
+margin: 56px;
+border-radius: 25px;
+background-color: rgb(251, 20, 251);
+color: black;
+
+}
+.cell span{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+@keyframes logo{
+  from{
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.logo{
+  animation: zoomIn 0.8s ease-out forwards;
+}
+
+  
+
